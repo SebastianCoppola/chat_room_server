@@ -15,6 +15,7 @@ public class ChatserverApplication {
 
 
 	public static void main(String[] args) {
+		System.out.println();
 		SpringApplication.run(ChatserverApplication.class, args);
 	}
 

@@ -11,8 +11,10 @@
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://aws.connect.psdb.cloud/chatroomdb?sslMode=VERIFY_IDENTITY"/>
-            <property name="javax.persistence.jdbc.user" value="te36ohmeq840o1qmh8dn"/>
-            <property name="javax.persistence.jdbc.password" value="pscale_pw_CRg6vwB6rgxcz42A1QJ5n4e058zmSj3hPn4SO3FUktT"/>
+<!--            <property name="javax.persistence.jdbc.user" value="te36ohmeq840o1qmh8dn"/>-->
+<!--            <property name="javax.persistence.jdbc.password" value="pscale_pw_CRg6vwB6rgxcz42A1QJ5n4e058zmSj3hPn4SO3FUktT"/>-->
+            <property name="javax.persistence.jdbc.user" value="${env.CHATROOM_DB_USER}"/>
+            <property name="javax.persistence.jdbc.password" value="${env.CHATROOM_DB_PASSWORD}"/>
 <!--            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/chatroom"/>-->
 <!--            <property name="javax.persistence.jdbc.user" value="root"/>-->
 <!--            <property name="javax.persistence.jdbc.password" value=""/>-->

@@ -10,23 +10,15 @@
         <class>com.chatserver.chatserver.model.User</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://aws.connect.psdb.cloud/chatroomdb?sslMode=VERIFY_IDENTITY"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
-            <property name="hibernate.connection.pool_size" value="10" />
-
-<!--            PLANET SCALE ENV-->
+            <!--PLANET SCALE ENV-->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://aws.connect.psdb.cloud/chatroomdb?sslMode=VERIFY_IDENTITY"/>
             <property name="javax.persistence.jdbc.user" value=""/>
             <property name="javax.persistence.jdbc.password" value=""/>
-
-<!--        PLANET SCALE HARDCODED-->
-<!--            <property name="javax.persistence.jdbc.user" value=""/>-->
-<!--            <property name="javax.persistence.jdbc.password" value=""/>-->
-
-<!--            LOCAL -->
+<!--            &lt;!&ndash; LOCAL&ndash;&gt;-->
 <!--            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/chatroom"/>-->
 <!--            <property name="javax.persistence.jdbc.user" value="root"/>-->
 <!--            <property name="javax.persistence.jdbc.password" value=""/>-->
-
         </properties>
     </persistence-unit>
 </persistence>
